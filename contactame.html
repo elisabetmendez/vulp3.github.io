@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Curriculum Vitae</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" integrity="sha512-5A8nwdMOWrSz20fDsjczgUidUBR8liPYU+WymTZP1lmY9G6Oc7HlZv156XqnsgNUzTyMefFTcsFH/tnJE/+xBg==" crossorigin="anonymous" referrerpolicy="no-referrer"/>
+    <link rel="stylesheet" href="CSS/index.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <script src="JS/index.js"></script>
+
+    <div class="container">
+        <div class="lado_izq">
+            <div class="infoperfil">
+                <div class="imgperfil">
+                    <img src="fotocv.png" alt="Foto de perfil">
+                </div>
+                <h2><a href="index.html">Ela Brown</a><br><span>Web Developer</span></h2>
+            </div>
+        
+        
+            <div class="infocontacto">
+                <h3 class="titulo">Información</h3>
+                <ul>
+                    <li>
+                        <span class="icon"><i class="fa fa-phone-square" aria-hidden="true"></i>
+                        </span>
+                        <span class="tel">+12 34567890</span>
+                    </li>
+                    <li>
+                        <span class="icon"><i class="fa fa-envelope" aria-hidden="true"></i></span>
+                        <span class="tel">mail@mail.com</span>
+                    </li>
+                    <li>
+                        <span class="icon"><i class="fa fa-desktop" aria-hidden="true"></i>
+    
+                        </span>
+                        <span class="tel"><a href="#">www.misitioweb.com</a> </span>
+                    </li>
+                    <li>
+                        <span class="icon"><i class="fa fa-map" aria-hidden="true"></i>
+    
+                        </span>
+                        <span class="tel">Buenos Aires, Argentina</span>
+                    </li>
+                </ul>
+            </div>
+
+        <div class="infocontacto edu">
+            <h3 class="titulo">Educación</h3>
+            <ul>
+                <li>
+                    <h5>2017 - 2020</h5>
+                    <h4>Desarrolo web</h4>
+                    <h3>Universidad X</h3>
+                </li>
+                <li>
+                    <h5>2017 (enero  - septiembre) </h5>
+                    <h4>Sé Programar</h4>
+                    <h3>Argentina Programa</h3>
+                </li>
+                <li>
+                    <h5>2015 - 2016</h5>
+                    <h4>Desarrollo y diseño web</h4>
+                    <h3>Codecademy</h3>
+                </li>
+            </ul>
+        </div>
+        
+        <div class="infocontacto idiomas">
+            <h3 class="titulo">Idiomas</h3>
+            <ul>
+                <li>
+                    <span class="text">Español</span>
+                    <span class="porcentaje">
+                        <div style="width: 100%;"></div>
+                    </span>
+                </li>
+                <li>
+                    <span class="text">Inglés</span>
+                    <span class="porcentaje">
+                        <div style="width: 70%;"></div>
+                    </span>
+                </li>
+            </ul>
+         </div>
+        </div>
+
+
+        <div class="lado_der">
+            <div class="sobremi">
+                <h2 class="titulo2">Sobre mí</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras malesuada mattis dui quis euismod. Vivamus et dui at odio dictum eleifend eget suscipit urna. Duis efficitur, justo non varius aliquet, libero sem aliquam libero, sit amet varius turpis lorem ut risus. <br><br> Nunc vehicula dictum purus id lacinia. Mauris ut posuere ipsum, a condimentum ex. Donec non laoreet augue. Aenean tempor mi mauris, at interdum dolor vestibulum at. Proin venenatis sem ac tempor lacinia.</p>
+            </div>
+
+            <div class="sobremi form">
+                <h2 class="titulo2">Contactame</h2>
+                <p>Si mi perfil se adapta a tu búsqueda, por favor no dudes en enviarme un mensaje.</p>
+                <br>
+                <div class="caja">
+                    <form class="formulario" onsubmit="return validarform()" name="form" id="form">
+                        <label>Nombre*</label>
+                        <input type="text" name="nombre" id="name" placeholder="Ingrese su nombre" />
+                        <br>
+                        <label>Apellido*</label>
+                        <input type="text" name="apellido" id="lastname" placeholder="Ingrese su apellido" />
+                        <br>
+                        <label>E-mail*</label>
+                        <input type="email" name="email" id="mail" placeholder="Ingrese su e-mail" />
+                        <br>
+                        <label>Teléfono</label>
+                        <input type="tel" name="tel" placeholder="Ingrese su teléfono"/>
+                        <br>
+                        <label>Mensaje: <textarea name="mensaje" rows="10" cols="50"></textarea></label>
+                        <br>
+                        <input type="submit" id="enviar" value="Enviar mensaje" />
+                    </form>
+                </div>
+            </div>
+
+            <div class="sobremi redes">
+                <div class="caja">
+                    <ul>
+                        <li>
+                            <a id="ig" href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+                            <a id="lkdn" href="#"><i class="fa fa-linkedin-square" aria-hidden="true"></i></a>
+                            <a id="tw" href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+                            <a id="ggl" href="#"><i class="fa fa-google-plus-square" aria-hidden="true"></i></a>
+                        </li>
+                    </ul>
+                    
+                </div>
+                    
+            </div>
+
+        </div>
+
+        
+
+    </div>
+
+
+</body>

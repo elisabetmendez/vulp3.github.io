@@ -1,0 +1,327 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:200,300,400,500,600,700,800,900&display=swap');
+*
+{
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+font-family: 'Poppins', sans-serif;
+}
+body {
+    background-color: rgba(228, 214, 233, 0.705);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+.container {
+    position: relative;
+    width: 100%;
+    max-width: 1000px;
+    min-height: 1000px;
+    margin: 50px;
+    background-color: #fff;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    box-shadow: 0 35px 55px rgba(0,0,0,0.1);
+}
+
+.container .lado_izq {
+    position: relative;
+    background: #4a405291;
+    padding: 40px;
+}
+
+.infoperfil {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 20px;
+    border-bottom: 1px solid rgba(255,255,255,0.2);
+}
+
+.infoperfil .imgperfil {
+position: relative;
+width: 200px;
+height: 200px;
+border-radius: 50%;
+overflow: hidden;
+}
+
+.infoperfil .imgperfil img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+a:link, a:visited {
+    text-decoration: none;
+    color: #ffffffbb;
+}
+
+a:hover {
+    color: #994c5cf1;
+}
+a:active {
+    text-decoration: none;
+}
+
+#contactame {
+    color: #5a4d63;
+}
+
+#contactame:hover {
+    color: #994c5cf1;
+}
+
+.infoperfil h2 {
+    color: #ffffffbb;
+    font-size: 1.5em;
+    margin-top: 20px;
+    text-transform: uppercase;
+    text-align: center;
+    font-weight: 600;
+    line-height: 1.4em;
+}
+
+.infoperfil h2 span {
+    font-size: 0.8em;
+    font-weight: 400;
+    color: #83095aa1;
+}
+
+.infocontacto {
+    padding-top: 40px;
+}
+
+.titulo {
+    color: #ffffffbb;
+    text-transform: uppercase;
+    font-weight: 600;
+    letter-spacing: 1px;
+    margin-bottom: 20px;
+}
+
+.infocontacto ul {
+    position: relative;
+}
+
+.infocontacto ul li {
+    position: relative;
+    list-style: none;
+    margin: 10px 0;
+    cursor: context-menu;
+}
+
+.infocontacto ul li .icon {
+    display: inline-block;
+    width: 30px;
+    font-size: 18px;
+    color: #7c0856;
+}
+
+.infocontacto ul li span {
+    color: #ffffffbb;
+    font-weight: 300;
+}
+
+.infocontacto.edu .titulo {
+    color: #ffffffbb;
+    text-transform: uppercase;
+    font-weight: 600;
+    letter-spacing: 1px;
+    margin-bottom: 20px;
+}
+.infocontacto.edu li {
+    margin-bottom: 15px;
+}
+
+.infocontacto.edu h5 {
+    color: #33142991;
+    font-weight: 600;
+}
+
+.infocontacto.edu h4:nth-child(2) {
+    color: #ffffffbb;
+    font-weight: 500;
+}
+
+.infocontacto.edu h3 {
+    color: #ffffffbb;
+    font-weight: 300;
+}
+
+.infocontacto.idiomas .porcentaje {
+    position: relative;
+    width: 100%;
+    height: 6px;
+    background: #2a34386b;
+    display: block;
+    margin-top: 5px;
+}
+
+.infocontacto.idiomas .porcentaje div {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    background: #8b1355;
+}
+
+.container .lado_der {
+    position: relative;
+    background: #ffffff;
+    padding: 40px;
+    
+}
+
+.sobremi {
+    margin-bottom: 50px;
+}
+
+.sobremi:last-child {
+    margin-bottom: 0;
+}
+
+.titulo2 {
+    color: #5a4d63;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-bottom: 10px;
+}
+
+p {
+    color: #333;
+}
+
+.sobremi .caja {
+    display: flex;
+    flex-direction: row;
+    margin: 20px 0;
+}
+
+.sobremi .caja .anios {
+    min-width: 150px;
+}
+
+.sobremi .caja .anios h5 {
+    text-transform: uppercase;
+    color: #746e6e;
+    font-weight: 600;
+}
+
+.sobremi .caja .txt h4 {
+    text-transform: uppercase;
+    color: #74184aa2;
+    font-size: 16px;
+}
+
+.skills .caja {
+    position: relative;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 150px 1fr;
+    justify-content: center;
+    align-items: center;
+}
+
+.skills .caja h4 {
+    text-transform: uppercase;
+    color: #746e6e;
+    font-weight: 500;
+}
+
+.skills .caja .porcentaje {
+    position: relative;
+    width: 100%;
+    height: 10px;
+    background: #dedddf;
+}
+
+.skills .caja .porcentaje div {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    background: #74184aa2;
+}
+
+.intereses ul {
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+}
+
+.intereses ul li {
+    list-style: none;
+    color: #333;
+    font-weight: 500;
+    margin: 10px 0;
+}
+
+.intereses ul li .fa {
+    color: #a526b6c9;
+    font-size: 18px;
+    width: 20px;
+}
+
+.formulario {
+    justify-content: center;
+    align-items: center;
+    line-height: 30px;
+}
+
+.formulario label {
+    display: inline-block;
+    width: 80px;
+}
+
+.sobremi.redes .caja ul {
+    display: grid;
+    grid-template-columns:(4,1fr);
+    position: relative;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.sobremi.redes .caja ul li {
+    list-style: none;
+    color: #333;
+    font-weight: 500;
+    margin: 10px 0;
+    font-size: 50px;
+    
+    
+}
+
+ .sobremi.redes .caja .fa {
+    font-size: 50px;
+    color: #74184aa2;
+    margin: 50px 40px;
+} 
+
+
+#ig:link, #ig:visited {
+    text-decoration: none;
+    color: #74184aa2;
+}
+
+#ig:hover {
+    color: #f02372d0;
+}
+
+/* a:link, a:visited {
+        text-decoration: none;
+        color: #ffffffbb;
+    }
+    
+    a:hover {
+        color: #994c5cf1;
+    }
+    a:active {
+        text-decoration: none;
+    } */
